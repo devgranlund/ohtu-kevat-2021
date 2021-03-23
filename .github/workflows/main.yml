@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      working-directory: ./viikko1/riippuvuuksien-injektointi-1/src
+      working-directory: ./viikko1/riippuvuuksien-injektointi-1/
 
     steps:
       - uses: actions/checkout@v2
