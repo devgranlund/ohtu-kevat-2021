@@ -27,7 +27,7 @@ jobs:
         working-directory: ${{env.working-directory}}
      
       - name: Run tests
-        run: poetry run coverage run --branch -m pytest
+        run: python3 -m poetry run coverage run --branch -m pytest
         working-directory: ${{env.working-directory}}
       
       - name: Coverage report
