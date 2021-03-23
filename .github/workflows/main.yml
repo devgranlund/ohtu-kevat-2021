@@ -23,3 +23,6 @@ jobs:
           cd viikko1
           pwd
           ls -la
+          cd riippuvuuksien-injektointi-1
+          pwd 
+          ls -la
