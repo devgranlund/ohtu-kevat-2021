@@ -26,14 +26,6 @@ jobs:
           poetry install
         working-directory: ${{env.working-directory}}
      
-      - name: Run tests
-        run: python3 -m poetry run coverage run --branch -m pytest
-        working-directory: ${{env.working-directory}}
-      
-      - name: Coverage report
-        run: poetry run coverage xml
-        working-directory: ${{env.working-directory}}
-      
-      - name: Coverage report to Codecov
-        run: bash <(curl -s https://codecov.io/bash)
+     - name: Run tests
+        run: poetry run python3 src/index.py
         working-directory: ${{env.working-directory}}
