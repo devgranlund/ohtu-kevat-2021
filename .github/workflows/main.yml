@@ -25,3 +25,7 @@ jobs:
           pip install poetry
           poetry install
         working-directory: ${{env.working-directory}}
+
+      - name: Run tests
+        run: poetry run python3 ./src/index.py
+        working-directory: ${{env.working-directory}}
