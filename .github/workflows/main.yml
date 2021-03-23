@@ -27,5 +27,5 @@ jobs:
         working-directory: ${{env.working-directory}}
 
       - name: Run tests
-        run: poetry run python3 ./src/index.py
+        run: poetry run pytest
         working-directory: ${{env.working-directory}}
