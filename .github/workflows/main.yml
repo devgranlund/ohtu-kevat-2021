@@ -30,3 +30,11 @@ jobs:
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
         working-directory: ${{env.working-directory}}
+
+      - name: Coverage report
+        run: poetry run coverage xml
+        working-directory: ${{env.working-directory}}
+      
+      - name: Coverage report to Codecov
+        run: bash <(curl -s https://codecov.io/bash)
+        working-directory: ${{env.working-directory}}
