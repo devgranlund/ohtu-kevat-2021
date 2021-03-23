@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.6
-        working-directory: ${{env.working-directory}}
       
       - name: Install Poetry and deps
         run: | 
