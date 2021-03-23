@@ -20,3 +20,6 @@ jobs:
         run: |
           pwd
           ls -la
+          cd viikko1
+          pwd
+          ls -la
