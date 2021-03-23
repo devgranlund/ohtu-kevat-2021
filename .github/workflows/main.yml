@@ -24,6 +24,7 @@ jobs:
         run: | 
           pip install poetry
           poetry install
+          poetry add coverage --dev
         working-directory: ${{env.working-directory}}
 
       - name: Run tests
