@@ -1,5 +1,5 @@
 import unittest
-from laskin import Laskin
+from ..laskin import Laskin
 
 
 class StubIO:

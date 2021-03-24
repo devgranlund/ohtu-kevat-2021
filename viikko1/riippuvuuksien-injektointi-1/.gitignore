@@ -2,6 +2,8 @@
 .DS_Store
 .coverage
 .pytest_cache
+.idea
+venv
 htmlcov
 __pycache__
 *.py[cod]
